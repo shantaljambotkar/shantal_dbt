@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: OpAL
+    description: All OpAL ingestions pre-loaded to tables.
+    schema: ldr
+    freshness: # default freshness
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
+    loaded_at_field: load_date
+    tables:
+      - name: opal_app
+        description: Listing of Applications 
+        columns:
+          - name: config_item_id
+            data_type: int8
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date
+      - name: opal_nw
+        description: Listing of Netowrk Devices
+        columns:
+          - name: config_item_id
+            data_type: int8
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date
+      - name: opal_svr
+        description: Listing of Servers & VMs
+        columns:
+          - name: config_item_id
+            data_type: int8
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date

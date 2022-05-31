@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: CM_Artemis
+    description: All CM (Artemis) ingestions pre-loaded to tables.
+    schema: ldr
+    freshness: # default freshness
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
+    loaded_at_field: load_date
+    tables:
+      - name: artemis_cm_aws
+        description: CM Instance Data for AWS
+        columns:
+          - name: asset_id
+            data_type: varchar
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date
+      - name: artemis_cm_azure
+        description: CM Instance Data for Azure
+        columns:
+          - name: asset_id
+            data_type: varchar
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date
+      - name: artemis_cm_geix
+        description: CM Instance Data for GEIX
+        columns:
+          - name: asset_id
+            data_type: varchar
+          - name: data
+            data_type: json
+          - name: load_date
+            data_type: date

@@ -1,0 +1,67 @@
+
+version: 2
+
+models:
+  - name: src_opal__svr
+    description: "Opal is the source from servicenow to get the server information"
+    columns:
+      - name: asset_id
+        tests:
+          - unique
+          - not_null
+      - name: sys_class_name
+        tests:
+          - accepted_values:
+              values: ['cmdb_ci_vm_instance', 'cmdb_ci_server']
+      - name: install_status
+        tests:
+          - accepted_values:
+              values: ['Installed']
+      - name: operational_status
+        tests:
+          - accepted_values:
+              values: ['Operational', 'Pending divestiture', 'DR Standby', 'Pending decomm']
+  - name: src_opal__nw
+    description: "Opal is the source from servicenow to get the network information"
+    columns:
+      - name: asset_id
+        tests:
+          - unique
+          - not_null
+      - name: sys_class_name
+        tests:
+          - accepted_values:
+              values: ['cmdb_ci_netgear']
+      - name: install_status
+        tests:
+          - accepted_values:
+              values: ['Installed']
+      - name: operational_status
+        tests:
+          - accepted_values:
+              values: ['Operational', 'Non-Operational', 'Pending decomm', 'Pending change']
+  - name: src_opal__app
+    description: "Opal is the source from servicenow to get the app information"
+    columns:
+      - name: asset_id
+        tests:
+          - unique
+          - not_null
+      - name: sys_class_name
+        tests:
+          - accepted_values:
+              values: ['u_cmdb_ci_business_app','u_cmdb_ci_app_module','cmdb_ci_service']
+      - name: install_status
+        tests:
+          - accepted_values:
+              values: ['Installed']
+      - name: operational_status
+        tests:
+          - accepted_values:
+              values: ['Operational', 'Non-Operational', 'Pending decomm']
+  - name: nmt_app_map__cloud
+    description: "Intermediate view to get data for the staging table"
+    columns:
+      - name: asset_id
+      - name: app_id
+        

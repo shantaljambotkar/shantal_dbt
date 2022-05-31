@@ -1,0 +1,68 @@
+
+
+============================== 2022-05-02 14:51:12.686873 | 456b31b1-eddc-48a8-b83b-3bbd912ded12 ==============================
+14:51:12.686873 [info ] [MainThread]: Running with dbt=1.0.4
+14:51:12.702582 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+14:51:12.702582 [debug] [MainThread]: Tracking: tracking
+14:51:12.762456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D32851400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D32825160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D32825A00>]}
+14:51:20.949382 [debug] [MainThread]: Starter project path: C:\Users\223058276\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
+14:51:26.799729 [info ] [MainThread]: 
+Your new dbt project "shantal_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+14:51:26.815355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D3294BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D3284A070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D3284A130>]}
+
+
+============================== 2022-05-02 15:23:03.946284 | 7971b261-75df-4a92-9148-4afa279df42b ==============================
+15:23:03.946284 [info ] [MainThread]: Running with dbt=1.0.4
+15:23:03.961833 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+15:23:03.961833 [debug] [MainThread]: Tracking: tracking
+15:23:04.039896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7A81070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7A81A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7A81580>]}
+15:23:04.119906 [debug] [MainThread]: Executing "git --help"
+15:23:04.211571 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+15:23:04.211571 [debug] [MainThread]: STDERR: "b''"
+15:23:04.214686 [debug] [MainThread]: Acquiring new postgres connection "debug"
+15:23:04.214686 [debug] [MainThread]: Using postgres connection "debug"
+15:23:04.214686 [debug] [MainThread]: On debug: select 1 as id
+15:23:04.214686 [debug] [MainThread]: Opening a new connection, currently in state init
+15:23:05.008503 [debug] [MainThread]: SQL status: SELECT 1 in 0.79 seconds
+15:23:05.008503 [debug] [MainThread]: On debug: Close
+15:23:05.016132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7B9FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7B9F640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F7B9F550>]}
+15:23:05.194907 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-05-31 18:56:24.949618 | ffa07f0c-4a7e-48e0-b4a2-d6c0991e2806 ==============================
+18:56:24.949618 [info ] [MainThread]: Running with dbt=1.0.4
+18:56:24.950863 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+18:56:24.950863 [debug] [MainThread]: Tracking: tracking
+18:56:25.020745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FAD5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FC2BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FC26D0>]}
+18:56:30.136353 [debug] [MainThread]: Starter project path: C:\Users\223058276\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
+18:56:32.500322 [info ] [MainThread]: 
+Your new dbt project "dbt_asset" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+18:56:32.516167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FD10D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FCA2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B4FCA1F0>]}
