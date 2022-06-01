@@ -1,0 +1,1 @@
+select * from {{ref('src_qualys__sw_inv')}}

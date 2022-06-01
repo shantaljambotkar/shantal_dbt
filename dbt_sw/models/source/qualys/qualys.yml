@@ -1,0 +1,75 @@
+version: 2
+
+sources:
+  - name: Qualys
+    description: All Qualys ingestions (via Sherlock DB) pre-loaded to tables.
+    schema: ldr
+    loader: AWS Lambda (Postgres -> Postgres)
+    freshness: # default freshness
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
+    tables:
+      - name: sherlock_sw_inventory
+        identifier: sherlock_sw_inventory
+        description: Inventory & other informational QIDs from Sherlock 
+        loaded_at_field: last_update_date
+        columns:
+          - name: ip
+          - name: host_id
+          - name: qg_hostid
+          - name: network_id
+          - name: tracking_method
+          - name: os
+          - name: netbios
+          - name: dns
+          - name: last_scan_date
+          - name: last_vm_scan_date
+          - name: last_vm_auth_scanned_date
+          - name: last_vm_scanned_duration
+          - name: last_vm_auth_scanned_duration
+          - name: qid
+          - name: first_found_date
+          - name: is_disabled
+          - name: is_ignored
+          - name: last_found_date
+          - name: last_test_date
+          - name: last_update_date
+          - name: port
+          - name: protocol
+          - name: results
+          - name: severity
+          - name: ssl
+          - name: status
+          - name: times_found
+          - name: vulntype
+          - name: affect_running_kernel
+          - name: affect_running_service
+          - name: affect_exploitable_config
+          - name: last_fixed_date
+          - name: evm_created
+          - name: evm_update
+          - name: asset_id
+          - name: host_name
+          - name: owning_business
+          - name: confidence_mask
+          - name: confidence_level
+          - name: uai
+      - name: sherlock_vuln
+        identifier: sherlock_vuln
+        description: EOL QIDs from Sherlock 
+        loaded_at_field: data_refresh_timestamp
+        columns:
+          - name: data_refresh_timestamp
+          - name: owning_business
+          - name: sub_business
+          - name: asset_id
+          - name: asset_class
+          - name: qid
+          - name: title
+          - name: vuln_status
+          - name: uai
+          - name: first_app_name
+          - name: results
+
+
+

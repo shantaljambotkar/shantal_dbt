@@ -1,0 +1,1343 @@
+
+
+============================== 2022-06-01 15:38:11.036127 | 5356fd21-6871-4393-85a7-c8de3f64a082 ==============================
+15:38:11.036127 [info ] [MainThread]: Running with dbt=1.0.4
+15:38:11.037712 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+15:38:11.050610 [debug] [MainThread]: Tracking: tracking
+15:38:11.100541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002529592AF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002529590CB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252958EAF40>]}
+15:38:11.102316 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+15:38:11.115221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252969E59A0>]}
+15:38:11.349385 [debug] [MainThread]: Parsing macros\adapters.sql
+15:38:11.378427 [debug] [MainThread]: Parsing macros\catalog.sql
+15:38:11.378427 [debug] [MainThread]: Parsing macros\relations.sql
+15:38:11.390598 [debug] [MainThread]: Parsing macros\materializations\snapshot_merge.sql
+15:38:11.392438 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+15:38:11.395354 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+15:38:11.409297 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+15:38:11.412251 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+15:38:11.418482 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+15:38:11.431729 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+15:38:11.440976 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+15:38:11.449985 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+15:38:11.454946 [debug] [MainThread]: Parsing macros\etc\statement.sql
+15:38:11.465731 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+15:38:11.469880 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+15:38:11.472183 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+15:38:11.474989 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+15:38:11.479035 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+15:38:11.482520 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+15:38:11.485494 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+15:38:11.487782 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+15:38:11.487782 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+15:38:11.493711 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+15:38:11.497104 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+15:38:11.517311 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+15:38:11.519041 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+15:38:11.537508 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+15:38:11.539879 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+15:38:11.551638 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+15:38:11.557786 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+15:38:11.570761 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+15:38:11.574227 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+15:38:11.576617 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+15:38:11.578988 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+15:38:11.584682 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+15:38:11.596246 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+15:38:11.600928 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+15:38:11.609812 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+15:38:11.618314 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+15:38:11.639421 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+15:38:11.643707 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+15:38:11.646948 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+15:38:11.657607 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+15:38:11.843092 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+15:38:11.857083 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+15:38:11.865802 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+15:38:11.868727 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+15:38:11.872617 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+15:38:11.877899 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+15:38:11.886169 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+15:38:11.938692 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sw.stage.intermediate
+
+15:38:11.940299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252969DBCA0>]}
+15:38:11.968627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252969DBA60>]}
+15:38:11.970083 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+15:38:11.971845 [info ] [MainThread]: 
+15:38:11.974837 [debug] [MainThread]: Acquiring new postgres connection "master"
+15:38:11.976592 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops"
+15:38:11.980466 [debug] [ThreadPool]: Using postgres connection "list_mymops"
+15:38:11.988814 [debug] [ThreadPool]: On list_mymops: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops"} */
+
+    select distinct nspname from pg_namespace
+  
+15:38:11.990426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+15:38:12.756644 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.77 seconds
+15:38:12.762562 [debug] [ThreadPool]: On list_mymops: Close
+15:38:12.768592 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops_dbt_shantal"
+15:38:12.772185 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+15:38:12.772185 [debug] [ThreadPool]: On list_mymops_dbt_shantal: BEGIN
+15:38:12.782224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+15:38:13.565237 [debug] [ThreadPool]: SQL status: BEGIN in 0.78 seconds
+15:38:13.566265 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+15:38:13.567911 [debug] [ThreadPool]: On list_mymops_dbt_shantal: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops_dbt_shantal"} */
+select
+      'mymops' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_shantal'
+    union all
+    select
+      'mymops' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_shantal'
+  
+15:38:13.627776 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.06 seconds
+15:38:13.630614 [debug] [ThreadPool]: On list_mymops_dbt_shantal: ROLLBACK
+15:38:13.690747 [debug] [ThreadPool]: On list_mymops_dbt_shantal: Close
+15:38:13.696044 [debug] [MainThread]: Using postgres connection "master"
+15:38:13.696541 [debug] [MainThread]: On master: BEGIN
+15:38:13.698649 [debug] [MainThread]: Opening a new connection, currently in state init
+15:38:14.510442 [debug] [MainThread]: SQL status: BEGIN in 0.81 seconds
+15:38:14.511489 [debug] [MainThread]: Using postgres connection "master"
+15:38:14.511489 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+15:38:14.592622 [debug] [MainThread]: SQL status: SELECT 135 in 0.08 seconds
+15:38:14.592622 [debug] [MainThread]: On master: ROLLBACK
+15:38:14.656246 [debug] [MainThread]: Using postgres connection "master"
+15:38:14.657294 [debug] [MainThread]: On master: BEGIN
+15:38:14.818671 [debug] [MainThread]: SQL status: BEGIN in 0.16 seconds
+15:38:14.822141 [debug] [MainThread]: On master: COMMIT
+15:38:14.826284 [debug] [MainThread]: Using postgres connection "master"
+15:38:14.829300 [debug] [MainThread]: On master: COMMIT
+15:38:14.886257 [debug] [MainThread]: SQL status: COMMIT in 0.06 seconds
+15:38:14.887478 [debug] [MainThread]: On master: Close
+15:38:14.894303 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+15:38:14.895853 [info ] [MainThread]: 
+15:38:14.926446 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__os
+15:38:14.926446 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__os"
+15:38:14.943072 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__os
+15:38:14.943072 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__os
+15:38:14.943072 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__os"
+15:38:14.955034 [debug] [Thread-1  ]: finished collecting timing info
+15:38:14.955970 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__os
+15:38:14.955970 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_eol
+15:38:14.958407 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_eol"
+15:38:14.959450 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_eol
+15:38:14.959450 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_eol
+15:38:14.962120 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_eol"
+15:38:14.967049 [debug] [Thread-1  ]: finished collecting timing info
+15:38:14.967049 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_eol
+15:38:14.967049 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_inv
+15:38:14.969964 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_inv"
+15:38:14.971468 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_inv
+15:38:14.972522 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_inv
+15:38:14.973314 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_inv"
+15:38:14.978932 [debug] [Thread-1  ]: finished collecting timing info
+15:38:14.979967 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_inv
+15:38:14.979967 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_scan
+15:38:14.984632 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_scan"
+15:38:14.984632 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_scan
+15:38:14.984632 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_scan
+15:38:14.987919 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_scan"
+15:38:14.987919 [debug] [Thread-1  ]: finished collecting timing info
+15:38:14.987919 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_scan
+15:38:14.987919 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_eolflag
+15:38:14.987919 [info ] [Thread-1  ]: 1 of 3 START table model dbt_shantal.stg_sw_eolflag............................. [RUN]
+15:38:14.987919 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_eolflag"
+15:38:15.001859 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_eolflag
+15:38:15.001859 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_eolflag
+15:38:15.004407 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_eolflag"
+15:38:15.012765 [debug] [Thread-1  ]: finished collecting timing info
+15:38:15.012765 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_eolflag
+15:38:15.044151 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_eolflag"
+15:38:15.054640 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+15:38:15.054640 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: BEGIN
+15:38:15.054640 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+15:38:15.657035 [debug] [Thread-1  ]: SQL status: BEGIN in 0.6 seconds
+15:38:15.659114 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+15:38:15.660132 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_eolflag"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_eolflag__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_eol as (
+SELECT data_refresh_timestamp,
+    owning_business,
+    sub_business,
+    asset_id,
+    asset_class,
+    qid::integer AS qid,
+    title,
+    vuln_status,
+    uai,
+    first_app_name,
+    results
+   FROM "mymops"."ldr"."qualys_eol_vuln" 
+  WHERE lower(vuln_status::text) = 'active'::text
+)select * from __dbt__cte__src_qualys__sw_eol
+  );
+15:38:15.726104 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qualys_eol_vuln" does not exist
+LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+                 ^
+
+15:38:15.730075 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: ROLLBACK
+15:38:15.794206 [debug] [Thread-1  ]: finished collecting timing info
+15:38:15.798322 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: Close
+15:38:15.802484 [debug] [Thread-1  ]: Database Error in model stg_sw_eolflag (models\stage\stg_sw_eolflag.sql)
+  relation "ldr.qualys_eol_vuln" does not exist
+  LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+                   ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_eolflag.sql
+15:38:15.805673 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025296C08520>]}
+15:38:15.810438 [error] [Thread-1  ]: 1 of 3 ERROR creating table model dbt_shantal.stg_sw_eolflag.................... [[31mERROR[0m in 0.82s]
+15:38:15.815240 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_eolflag
+15:38:15.818241 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_installed
+15:38:15.820238 [info ] [Thread-1  ]: 2 of 3 START table model dbt_shantal.stg_sw_installed........................... [RUN]
+15:38:15.823249 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_installed"
+15:38:15.824796 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_installed
+15:38:15.825924 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_installed
+15:38:15.829727 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_installed"
+15:38:15.833112 [debug] [Thread-1  ]: finished collecting timing info
+15:38:15.833900 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_installed
+15:38:15.836378 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_installed"
+15:38:15.840435 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+15:38:15.842178 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: BEGIN
+15:38:15.843175 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+15:38:16.422127 [debug] [Thread-1  ]: SQL status: BEGIN in 0.58 seconds
+15:38:16.422598 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+15:38:16.422598 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_installed"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_installed__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_inv as (
+SELECT q.asset_id,
+    q.ip,
+    q.qid,
+    q.os,
+    NULL::text AS title,
+    q.last_detected,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[1]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[2]
+            ELSE NULL::text
+        END AS sw_name,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[2]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[3]
+            ELSE NULL::text
+        END AS sw_version,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN
+            CASE
+                WHEN btrim(q.sw[3]) = ''::text THEN NULL::text
+                ELSE q.sw[3]
+            END
+            ELSE NULL::text
+        END AS sw_install_date,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[4]
+            ELSE NULL::text
+        END AS sw_publisher,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[5]
+            ELSE NULL::text
+        END AS sw_language,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[6]
+            WHEN q.qid::text = '45211'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_install_path,
+        CASE
+            WHEN q.qid::text = '45253'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_descr
+   FROM ( SELECT qc.asset_id,
+            qc.ip,
+            qc.qid,
+            qc.os,
+            qc.last_found_date AS last_detected,
+            regexp_split_to_array(regexp_split_to_table(qc.results::text, chr(10)), chr(9)) AS sw
+           FROM "mymops"."ldr"."qualys_sw_inventory" qc
+          WHERE qc.asset_id IS NOT NULL AND (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))) q
+)select * from __dbt__cte__src_qualys__sw_inv
+  );
+15:38:16.487249 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qualys_sw_inventory" does not exist
+LINE 54:            FROM "mymops"."ldr"."qualys_sw_inventory" qc
+                         ^
+
+15:38:16.488638 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: ROLLBACK
+15:38:16.547863 [debug] [Thread-1  ]: finished collecting timing info
+15:38:16.551630 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: Close
+15:38:16.556734 [debug] [Thread-1  ]: Database Error in model stg_sw_installed (models\stage\stg_sw_installed.sql)
+  relation "ldr.qualys_sw_inventory" does not exist
+  LINE 54:            FROM "mymops"."ldr"."qualys_sw_inventory" qc
+                           ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_installed.sql
+15:38:16.558305 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025296C0B880>]}
+15:38:16.558305 [error] [Thread-1  ]: 2 of 3 ERROR creating table model dbt_shantal.stg_sw_installed.................. [[31mERROR[0m in 0.74s]
+15:38:16.558305 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_installed
+15:38:16.558305 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_scanned
+15:38:16.574005 [info ] [Thread-1  ]: 3 of 3 START table model dbt_shantal.stg_sw_scanned............................. [RUN]
+15:38:16.575823 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_scanned"
+15:38:16.575823 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_scanned
+15:38:16.575823 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_scanned
+15:38:16.575823 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_scanned"
+15:38:16.592942 [debug] [Thread-1  ]: finished collecting timing info
+15:38:16.592942 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_scanned
+15:38:16.592942 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_scanned"
+15:38:16.610900 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+15:38:16.612067 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: BEGIN
+15:38:16.612067 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+15:38:17.244059 [debug] [Thread-1  ]: SQL status: BEGIN in 0.63 seconds
+15:38:17.245353 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+15:38:17.245353 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_scanned"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_scanned__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_scan as (
+SELECT qc.asset_id,
+    qc.ip,
+    qc.qid,
+    qc.os,
+    NULL::text AS title,
+    NULL::text AS last_detected,
+    qc.results
+   FROM "mymops"."ldr"."qualys_sw_inventory" qc
+  WHERE qc.asset_id IS NOT NULL AND NOT (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))
+)select * from __dbt__cte__src_qualys__sw_scan
+  );
+15:38:17.313602 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qualys_sw_inventory" does not exist
+LINE 14:    FROM "mymops"."ldr"."qualys_sw_inventory" qc
+                 ^
+
+15:38:17.314663 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: ROLLBACK
+15:38:17.382374 [debug] [Thread-1  ]: finished collecting timing info
+15:38:17.383496 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: Close
+15:38:17.390863 [debug] [Thread-1  ]: Database Error in model stg_sw_scanned (models\stage\stg_sw_scanned.sql)
+  relation "ldr.qualys_sw_inventory" does not exist
+  LINE 14:    FROM "mymops"."ldr"."qualys_sw_inventory" qc
+                   ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_scanned.sql
+15:38:17.392053 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5356fd21-6871-4393-85a7-c8de3f64a082', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025296C21BE0>]}
+15:38:17.392053 [error] [Thread-1  ]: 3 of 3 ERROR creating table model dbt_shantal.stg_sw_scanned.................... [[31mERROR[0m in 0.82s]
+15:38:17.392053 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_scanned
+15:38:17.405390 [debug] [MainThread]: Acquiring new postgres connection "master"
+15:38:17.405390 [debug] [MainThread]: Using postgres connection "master"
+15:38:17.405390 [debug] [MainThread]: On master: BEGIN
+15:38:17.409512 [debug] [MainThread]: Opening a new connection, currently in state closed
+15:38:18.159126 [debug] [MainThread]: SQL status: BEGIN in 0.75 seconds
+15:38:18.161969 [debug] [MainThread]: On master: COMMIT
+15:38:18.165805 [debug] [MainThread]: Using postgres connection "master"
+15:38:18.169813 [debug] [MainThread]: On master: COMMIT
+15:38:18.225123 [debug] [MainThread]: SQL status: COMMIT in 0.05 seconds
+15:38:18.229052 [debug] [MainThread]: On master: Close
+15:38:18.234039 [info ] [MainThread]: 
+15:38:18.235761 [info ] [MainThread]: Finished running 3 table models in 6.26s.
+15:38:18.238825 [debug] [MainThread]: Connection 'master' was properly closed.
+15:38:18.242857 [debug] [MainThread]: Connection 'list_mymops' was properly closed.
+15:38:18.245237 [debug] [MainThread]: Connection 'list_mymops_dbt_shantal' was properly closed.
+15:38:18.247453 [debug] [MainThread]: Connection 'model.dbt_sw.stg_sw_scanned' was properly closed.
+15:38:18.257700 [info ] [MainThread]: 
+15:38:18.258727 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+15:38:18.260805 [info ] [MainThread]: 
+15:38:18.262896 [error] [MainThread]: [33mDatabase Error in model stg_sw_eolflag (models\stage\stg_sw_eolflag.sql)[0m
+15:38:18.264928 [error] [MainThread]:   relation "ldr.qualys_eol_vuln" does not exist
+15:38:18.266920 [error] [MainThread]:   LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+15:38:18.268689 [error] [MainThread]:                    ^
+15:38:18.270508 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_eolflag.sql
+15:38:18.271658 [info ] [MainThread]: 
+15:38:18.273054 [error] [MainThread]: [33mDatabase Error in model stg_sw_installed (models\stage\stg_sw_installed.sql)[0m
+15:38:18.274044 [error] [MainThread]:   relation "ldr.qualys_sw_inventory" does not exist
+15:38:18.275458 [error] [MainThread]:   LINE 54:            FROM "mymops"."ldr"."qualys_sw_inventory" qc
+15:38:18.277087 [error] [MainThread]:                            ^
+15:38:18.278428 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_installed.sql
+15:38:18.279872 [info ] [MainThread]: 
+15:38:18.281542 [error] [MainThread]: [33mDatabase Error in model stg_sw_scanned (models\stage\stg_sw_scanned.sql)[0m
+15:38:18.282485 [error] [MainThread]:   relation "ldr.qualys_sw_inventory" does not exist
+15:38:18.284498 [error] [MainThread]:   LINE 14:    FROM "mymops"."ldr"."qualys_sw_inventory" qc
+15:38:18.285587 [error] [MainThread]:                    ^
+15:38:18.286698 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_scanned.sql
+15:38:18.287771 [info ] [MainThread]: 
+15:38:18.288869 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+15:38:18.290143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002529474DAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025296B911C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025296C2F640>]}
+
+
+============================== 2022-06-01 18:11:57.987656 | 5a2b7ca8-e3c7-41b1-b004-98e6c5c56b57 ==============================
+18:11:57.987656 [info ] [MainThread]: Running with dbt=1.0.4
+18:11:57.987656 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:11:57.987656 [debug] [MainThread]: Tracking: tracking
+18:11:58.056374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA172B0D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA172B00A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA172B07F0>]}
+18:11:58.641561 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+18:11:58.641561 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:11:58.641561 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:11:58.641561 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:11:58.662118 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:11:58.674187 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:11:58.678136 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:11:58.681203 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:11:58.684195 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:11:58.687181 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:11:58.689175 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:11:58.711115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA183EF700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA1841CE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA1841C2B0>]}
+
+
+============================== 2022-06-01 18:12:27.095049 | bf11d0b7-3648-4935-b4d4-693c942993ad ==============================
+18:12:27.095049 [info ] [MainThread]: Running with dbt=1.0.4
+18:12:27.095049 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:12:27.110584 [debug] [MainThread]: Tracking: tracking
+18:12:27.181871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB591AF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB58FCB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB58DAF40>]}
+18:12:27.348642 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+18:12:27.348642 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:12:27.348642 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:12:27.360074 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:12:27.370450 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:12:27.386103 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:12:27.386103 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:12:27.386103 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:12:27.386103 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:12:27.386103 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:12:27.401727 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:12:27.417351 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sw.stage.intermediate
+
+18:12:27.432358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf11d0b7-3648-4935-b4d4-693c942993ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6BCAF10>]}
+18:12:27.471157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf11d0b7-3648-4935-b4d4-693c942993ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB523CB80>]}
+18:12:27.472539 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+18:12:27.473938 [info ] [MainThread]: 
+18:12:27.473938 [debug] [MainThread]: Acquiring new postgres connection "master"
+18:12:27.473938 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops"
+18:12:27.489724 [debug] [ThreadPool]: Using postgres connection "list_mymops"
+18:12:27.489724 [debug] [ThreadPool]: On list_mymops: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops"} */
+
+    select distinct nspname from pg_namespace
+  
+18:12:27.489724 [debug] [ThreadPool]: Opening a new connection, currently in state init
+18:12:28.142597 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.65 seconds
+18:12:28.143701 [debug] [ThreadPool]: On list_mymops: Close
+18:12:28.150471 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops_dbt_shantal"
+18:12:28.150471 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+18:12:28.150471 [debug] [ThreadPool]: On list_mymops_dbt_shantal: BEGIN
+18:12:28.150471 [debug] [ThreadPool]: Opening a new connection, currently in state init
+18:12:28.951247 [debug] [ThreadPool]: SQL status: BEGIN in 0.8 seconds
+18:12:28.951247 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+18:12:28.951247 [debug] [ThreadPool]: On list_mymops_dbt_shantal: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops_dbt_shantal"} */
+select
+      'mymops' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_shantal'
+    union all
+    select
+      'mymops' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_shantal'
+  
+18:12:29.018348 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.07 seconds
+18:12:29.019449 [debug] [ThreadPool]: On list_mymops_dbt_shantal: ROLLBACK
+18:12:29.079043 [debug] [ThreadPool]: On list_mymops_dbt_shantal: Close
+18:12:29.084099 [debug] [MainThread]: Using postgres connection "master"
+18:12:29.084099 [debug] [MainThread]: On master: BEGIN
+18:12:29.084099 [debug] [MainThread]: Opening a new connection, currently in state init
+18:12:29.616242 [debug] [MainThread]: SQL status: BEGIN in 0.53 seconds
+18:12:29.617360 [debug] [MainThread]: Using postgres connection "master"
+18:12:29.617360 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+18:12:29.999602 [debug] [MainThread]: SQL status: SELECT 135 in 0.38 seconds
+18:12:29.999602 [debug] [MainThread]: On master: ROLLBACK
+18:12:30.063063 [debug] [MainThread]: Using postgres connection "master"
+18:12:30.063063 [debug] [MainThread]: On master: BEGIN
+18:12:30.174120 [debug] [MainThread]: SQL status: BEGIN in 0.11 seconds
+18:12:30.175141 [debug] [MainThread]: On master: COMMIT
+18:12:30.176679 [debug] [MainThread]: Using postgres connection "master"
+18:12:30.178059 [debug] [MainThread]: On master: COMMIT
+18:12:30.237772 [debug] [MainThread]: SQL status: COMMIT in 0.06 seconds
+18:12:30.238669 [debug] [MainThread]: On master: Close
+18:12:30.238669 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+18:12:30.241071 [info ] [MainThread]: 
+18:12:30.242221 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__os
+18:12:30.242221 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__os"
+18:12:30.242221 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__os
+18:12:30.256448 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__os
+18:12:30.256448 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__os"
+18:12:30.256448 [debug] [Thread-1  ]: finished collecting timing info
+18:12:30.264065 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__os
+18:12:30.266393 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_eol
+18:12:30.267003 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_eol"
+18:12:30.268364 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_eol
+18:12:30.268364 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_eol
+18:12:30.268364 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_eol"
+18:12:30.276475 [debug] [Thread-1  ]: finished collecting timing info
+18:12:30.277739 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_eol
+18:12:30.279564 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_inv
+18:12:30.279564 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_inv"
+18:12:30.282318 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_inv
+18:12:30.283508 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_inv
+18:12:30.287111 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_inv"
+18:12:30.290268 [debug] [Thread-1  ]: finished collecting timing info
+18:12:30.291912 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_inv
+18:12:30.293585 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_scan
+18:12:30.293585 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_scan"
+18:12:30.295324 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_scan
+18:12:30.297159 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_scan
+18:12:30.297656 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_scan"
+18:12:30.302588 [debug] [Thread-1  ]: finished collecting timing info
+18:12:30.302588 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_scan
+18:12:30.302588 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_eolflag
+18:12:30.302588 [info ] [Thread-1  ]: 1 of 3 START table model dbt_shantal.stg_sw_eolflag............................. [RUN]
+18:12:30.302588 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_eolflag"
+18:12:30.308442 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_eolflag
+18:12:30.308442 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_eolflag
+18:12:30.308442 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_eolflag"
+18:12:30.308442 [debug] [Thread-1  ]: finished collecting timing info
+18:12:30.308442 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_eolflag
+18:12:30.338376 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_eolflag"
+18:12:30.338376 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+18:12:30.344922 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: BEGIN
+18:12:30.344922 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+18:12:30.919584 [debug] [Thread-1  ]: SQL status: BEGIN in 0.57 seconds
+18:12:30.920681 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+18:12:30.920681 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_eolflag"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_eolflag__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_eol as (
+SELECT data_refresh_timestamp,
+    owning_business,
+    sub_business,
+    asset_id,
+    asset_class,
+    qid::integer AS qid,
+    title,
+    vuln_status,
+    uai,
+    first_app_name,
+    results
+   FROM "mymops"."ldr"."qualys_eol_vuln" 
+  WHERE lower(vuln_status::text) = 'active'::text
+)select * from __dbt__cte__src_qualys__sw_eol
+  );
+18:12:30.987388 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qualys_eol_vuln" does not exist
+LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+                 ^
+
+18:12:30.988441 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: ROLLBACK
+18:12:31.055323 [debug] [Thread-1  ]: finished collecting timing info
+18:12:31.058993 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: Close
+18:12:31.062223 [debug] [Thread-1  ]: Database Error in model stg_sw_eolflag (models\stage\stg_sw_eolflag.sql)
+  relation "ldr.qualys_eol_vuln" does not exist
+  LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+                   ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_eolflag.sql
+18:12:31.063655 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf11d0b7-3648-4935-b4d4-693c942993ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB52E1490>]}
+18:12:31.063655 [error] [Thread-1  ]: 1 of 3 ERROR creating table model dbt_shantal.stg_sw_eolflag.................... [[31mERROR[0m in 0.76s]
+18:12:31.063655 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_eolflag
+18:12:31.063655 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_installed
+18:12:31.069724 [info ] [Thread-1  ]: 2 of 3 START table model dbt_shantal.stg_sw_installed........................... [RUN]
+18:12:31.069724 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_installed"
+18:12:31.069724 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_installed
+18:12:31.072926 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_installed
+18:12:31.072926 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_installed"
+18:12:31.072926 [debug] [Thread-1  ]: finished collecting timing info
+18:12:31.072926 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_installed
+18:12:31.081404 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_installed"
+18:12:31.081404 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+18:12:31.081404 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: BEGIN
+18:12:31.081404 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+18:12:31.670083 [debug] [Thread-1  ]: SQL status: BEGIN in 0.59 seconds
+18:12:31.671195 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+18:12:31.671195 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_installed"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_installed__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_inv as (
+SELECT q.asset_id,
+    q.ip,
+    q.qid,
+    q.os,
+    NULL::text AS title,
+    q.last_detected,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[1]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[2]
+            ELSE NULL::text
+        END AS sw_name,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[2]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[3]
+            ELSE NULL::text
+        END AS sw_version,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN
+            CASE
+                WHEN btrim(q.sw[3]) = ''::text THEN NULL::text
+                ELSE q.sw[3]
+            END
+            ELSE NULL::text
+        END AS sw_install_date,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[4]
+            ELSE NULL::text
+        END AS sw_publisher,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[5]
+            ELSE NULL::text
+        END AS sw_language,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[6]
+            WHEN q.qid::text = '45211'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_install_path,
+        CASE
+            WHEN q.qid::text = '45253'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_descr
+   FROM ( SELECT qc.asset_id,
+            qc.ip,
+            qc.qid,
+            qc.os,
+            qc.last_found_date AS last_detected,
+            regexp_split_to_array(regexp_split_to_table(qc.results::text, chr(10)), chr(9)) AS sw
+           FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+          WHERE qc.asset_id IS NOT NULL AND (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))) q
+)select * from __dbt__cte__src_qualys__sw_inv
+  );
+18:12:31.731998 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qsherlock_sw_inventory" does not exist
+LINE 54:            FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+                         ^
+
+18:12:31.735019 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: ROLLBACK
+18:12:31.790606 [debug] [Thread-1  ]: finished collecting timing info
+18:12:31.795022 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: Close
+18:12:31.797804 [debug] [Thread-1  ]: Database Error in model stg_sw_installed (models\stage\stg_sw_installed.sql)
+  relation "ldr.qsherlock_sw_inventory" does not exist
+  LINE 54:            FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+                           ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_installed.sql
+18:12:31.798154 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf11d0b7-3648-4935-b4d4-693c942993ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6BCA3A0>]}
+18:12:31.799287 [error] [Thread-1  ]: 2 of 3 ERROR creating table model dbt_shantal.stg_sw_installed.................. [[31mERROR[0m in 0.73s]
+18:12:31.799287 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_installed
+18:12:31.799287 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_scanned
+18:12:31.799287 [info ] [Thread-1  ]: 3 of 3 START table model dbt_shantal.stg_sw_scanned............................. [RUN]
+18:12:31.799287 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_scanned"
+18:12:31.799287 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_scanned
+18:12:31.799287 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_scanned
+18:12:31.799287 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_scanned"
+18:12:31.799287 [debug] [Thread-1  ]: finished collecting timing info
+18:12:31.799287 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_scanned
+18:12:31.814990 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_scanned"
+18:12:31.819141 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+18:12:31.820236 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: BEGIN
+18:12:31.821500 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+18:12:32.457584 [debug] [Thread-1  ]: SQL status: BEGIN in 0.64 seconds
+18:12:32.457584 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+18:12:32.457584 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_scanned"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_scanned__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_scan as (
+SELECT qc.asset_id,
+    qc.ip,
+    qc.qid,
+    qc.os,
+    NULL::text AS title,
+    NULL::text AS last_detected,
+    qc.results
+   FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+  WHERE qc.asset_id IS NOT NULL AND NOT (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))
+)select * from __dbt__cte__src_qualys__sw_scan
+  );
+18:12:32.562703 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ldr.qsherlock_sw_inventory" does not exist
+LINE 14:    FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+                 ^
+
+18:12:32.562703 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: ROLLBACK
+18:12:32.624702 [debug] [Thread-1  ]: finished collecting timing info
+18:12:32.624702 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: Close
+18:12:32.631035 [debug] [Thread-1  ]: Database Error in model stg_sw_scanned (models\stage\stg_sw_scanned.sql)
+  relation "ldr.qsherlock_sw_inventory" does not exist
+  LINE 14:    FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+                   ^
+  compiled SQL at target\run\dbt_sw\models\stage\stg_sw_scanned.sql
+18:12:32.632538 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf11d0b7-3648-4935-b4d4-693c942993ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB52D8FA0>]}
+18:12:32.632538 [error] [Thread-1  ]: 3 of 3 ERROR creating table model dbt_shantal.stg_sw_scanned.................... [[31mERROR[0m in 0.83s]
+18:12:32.632538 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_scanned
+18:12:32.632538 [debug] [MainThread]: Acquiring new postgres connection "master"
+18:12:32.632538 [debug] [MainThread]: Using postgres connection "master"
+18:12:32.642125 [debug] [MainThread]: On master: BEGIN
+18:12:32.642125 [debug] [MainThread]: Opening a new connection, currently in state closed
+18:12:33.260804 [debug] [MainThread]: SQL status: BEGIN in 0.62 seconds
+18:12:33.261926 [debug] [MainThread]: On master: COMMIT
+18:12:33.261926 [debug] [MainThread]: Using postgres connection "master"
+18:12:33.261926 [debug] [MainThread]: On master: COMMIT
+18:12:33.321116 [debug] [MainThread]: SQL status: COMMIT in 0.06 seconds
+18:12:33.322152 [debug] [MainThread]: On master: Close
+18:12:33.329380 [info ] [MainThread]: 
+18:12:33.330559 [info ] [MainThread]: Finished running 3 table models in 5.86s.
+18:12:33.330559 [debug] [MainThread]: Connection 'master' was properly closed.
+18:12:33.330559 [debug] [MainThread]: Connection 'list_mymops' was properly closed.
+18:12:33.330559 [debug] [MainThread]: Connection 'list_mymops_dbt_shantal' was properly closed.
+18:12:33.330559 [debug] [MainThread]: Connection 'model.dbt_sw.stg_sw_scanned' was properly closed.
+18:12:33.345334 [info ] [MainThread]: 
+18:12:33.345334 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+18:12:33.345334 [info ] [MainThread]: 
+18:12:33.345334 [error] [MainThread]: [33mDatabase Error in model stg_sw_eolflag (models\stage\stg_sw_eolflag.sql)[0m
+18:12:33.345334 [error] [MainThread]:   relation "ldr.qualys_eol_vuln" does not exist
+18:12:33.345334 [error] [MainThread]:   LINE 18:    FROM "mymops"."ldr"."qualys_eol_vuln" 
+18:12:33.353783 [error] [MainThread]:                    ^
+18:12:33.353783 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_eolflag.sql
+18:12:33.357650 [info ] [MainThread]: 
+18:12:33.357650 [error] [MainThread]: [33mDatabase Error in model stg_sw_installed (models\stage\stg_sw_installed.sql)[0m
+18:12:33.357650 [error] [MainThread]:   relation "ldr.qsherlock_sw_inventory" does not exist
+18:12:33.357650 [error] [MainThread]:   LINE 54:            FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+18:12:33.357650 [error] [MainThread]:                            ^
+18:12:33.357650 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_installed.sql
+18:12:33.357650 [info ] [MainThread]: 
+18:12:33.357650 [error] [MainThread]: [33mDatabase Error in model stg_sw_scanned (models\stage\stg_sw_scanned.sql)[0m
+18:12:33.357650 [error] [MainThread]:   relation "ldr.qsherlock_sw_inventory" does not exist
+18:12:33.357650 [error] [MainThread]:   LINE 14:    FROM "mymops"."ldr"."qsherlock_sw_inventory" qc
+18:12:33.357650 [error] [MainThread]:                    ^
+18:12:33.357650 [error] [MainThread]:   compiled SQL at target\run\dbt_sw\models\stage\stg_sw_scanned.sql
+18:12:33.373430 [info ] [MainThread]: 
+18:12:33.373430 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+18:12:33.373430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB523C400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB52538B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024BB6BA9EB0>]}
+
+
+============================== 2022-06-01 18:17:23.183779 | deefa91b-2c80-4111-adfb-a0f1e0c9ef01 ==============================
+18:17:23.183779 [info ] [MainThread]: Running with dbt=1.0.4
+18:17:23.183779 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:17:23.183779 [debug] [MainThread]: Tracking: tracking
+18:17:23.252647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299ECF0A6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299ECF0A5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299ECF0A6A0>]}
+18:17:23.403560 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+18:17:23.403560 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:17:23.403560 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:17:23.412148 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:17:23.412686 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+18:17:23.413800 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+18:17:23.413800 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+18:17:23.413800 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+18:17:23.424487 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:17:23.434633 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:17:23.434633 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:17:23.434633 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:17:23.446630 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:17:23.446630 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:17:23.446630 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:17:23.475238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299ECF00940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299EE070970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299EE070A90>]}
+
+
+============================== 2022-06-01 18:19:22.358801 | 61eb7fd6-0191-4c1e-9435-07aa6b36f505 ==============================
+18:19:22.358801 [info ] [MainThread]: Running with dbt=1.0.4
+18:19:22.358801 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:19:22.358801 [debug] [MainThread]: Tracking: tracking
+18:19:22.435719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FEBE1FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FEBE1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FEBE1B20>]}
+18:19:22.560148 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+18:19:22.560148 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:19:22.560148 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:19:22.575762 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:19:22.575762 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+18:19:22.575762 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+18:19:22.575762 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+18:19:22.575762 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+18:19:22.581839 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:19:22.597543 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:19:22.597543 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:19:22.597543 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:19:22.597543 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:19:22.597543 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:19:22.613162 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:19:22.628792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FED3A490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FED708E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1FED706A0>]}
+
+
+============================== 2022-06-01 18:29:02.694538 | 8c817a18-02d0-480f-a08a-1f6cd388cee4 ==============================
+18:29:02.694538 [info ] [MainThread]: Running with dbt=1.0.4
+18:29:02.694538 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:29:02.694538 [debug] [MainThread]: Tracking: tracking
+18:29:02.765311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647DFD07F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647DFD0BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647DFD0EB0>]}
+18:29:02.897908 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+18:29:02.897908 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:29:02.897908 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:29:02.897908 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:29:02.897908 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+18:29:02.897908 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+18:29:02.897908 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+18:29:02.897908 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+18:29:02.917108 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:29:02.919170 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:29:02.919170 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:29:02.936163 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:29:02.936163 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:29:02.936163 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:29:02.936163 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:29:02.951973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647F10BFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647F139B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001647F139D90>]}
+
+
+============================== 2022-06-01 18:38:13.021502 | 9506462c-374c-4b3d-8ede-ef3e8fb6e476 ==============================
+18:38:13.021502 [info ] [MainThread]: Running with dbt=1.0.4
+18:38:13.021502 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:38:13.038386 [debug] [MainThread]: Tracking: tracking
+18:38:13.104652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD81FA970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD81FAE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD81FA160>]}
+18:38:13.222293 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+18:38:13.237914 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:38:13.237914 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:38:13.237914 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:38:13.237914 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+18:38:13.237914 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+18:38:13.237914 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+18:38:13.237914 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+18:38:13.243987 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:38:13.259696 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:38:13.259696 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:38:13.259696 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:38:13.259696 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:38:13.276158 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:38:13.280940 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:38:13.302358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD932AFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD9359B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FCD9359D90>]}
+
+
+============================== 2022-06-01 18:43:41.764349 | a54a9ce0-350a-4fab-9c1b-34491fdb9815 ==============================
+18:43:41.764349 [info ] [MainThread]: Running with dbt=1.0.4
+18:43:41.764349 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+18:43:41.764349 [debug] [MainThread]: Tracking: tracking
+18:43:41.838062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F75FAF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F75DCB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F75BAF40>]}
+18:43:41.970070 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+18:43:41.970070 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+18:43:41.970070 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+18:43:41.970070 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+18:43:41.970070 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+18:43:41.970070 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+18:43:41.985671 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+18:43:41.985671 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+18:43:41.985671 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+18:43:42.002470 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+18:43:42.002470 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+18:43:42.002470 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+18:43:42.002470 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+18:43:42.018161 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+18:43:42.018161 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+18:43:42.033797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F881AAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F8854700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214F8854880>]}
+
+
+============================== 2022-06-01 19:21:35.969125 | a1d9dad5-4b65-4ff9-b16f-45326a92d916 ==============================
+19:21:35.969125 [info ] [MainThread]: Running with dbt=1.0.4
+19:21:35.969125 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\223058276\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+19:21:35.969125 [debug] [MainThread]: Tracking: tracking
+19:21:36.037736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCE28A7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCE28AEE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCE28A1F0>]}
+19:21:36.171372 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+19:21:36.171372 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_sw_inventory
+19:21:36.171372 [debug] [MainThread]: Partial parsing: deleted source source.dbt_sw.Qualys.qualys_eol_vuln
+19:21:36.171372 [debug] [MainThread]: Partial parsing: update schema file: dbt_sw://models\source\qualys\qualys.yml
+19:21:36.171372 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_scan.sql
+19:21:36.171372 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_inv.sql
+19:21:36.179449 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__os.sql
+19:21:36.179602 [debug] [MainThread]: Partial parsing: updated file: dbt_sw://models\source\qualys\src_qualys__sw_eol.sql
+19:21:36.181633 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__os.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_installed.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_inv.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_scanned.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_scan.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed stage\stg_sw_eolflag.sql
+19:21:36.199660 [debug] [MainThread]: 1699: static parser successfully parsed source\qualys\src_qualys__sw_eol.sql
+19:21:36.241120 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_sw.stage.intermediate
+
+19:21:36.247098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a1d9dad5-4b65-4ff9-b16f-45326a92d916', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCF3B39D0>]}
+19:21:36.274934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a1d9dad5-4b65-4ff9-b16f-45326a92d916', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCDAD10A0>]}
+19:21:36.275933 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+19:21:36.278248 [info ] [MainThread]: 
+19:21:36.280316 [debug] [MainThread]: Acquiring new postgres connection "master"
+19:21:36.284338 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops"
+19:21:36.285490 [debug] [ThreadPool]: Using postgres connection "list_mymops"
+19:21:36.285490 [debug] [ThreadPool]: On list_mymops: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops"} */
+
+    select distinct nspname from pg_namespace
+  
+19:21:36.285490 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:21:37.075981 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.79 seconds
+19:21:37.077083 [debug] [ThreadPool]: On list_mymops: Close
+19:21:37.086614 [debug] [ThreadPool]: Acquiring new postgres connection "list_mymops_dbt_shantal"
+19:21:37.086614 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+19:21:37.086614 [debug] [ThreadPool]: On list_mymops_dbt_shantal: BEGIN
+19:21:37.086614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+19:21:37.695193 [debug] [ThreadPool]: SQL status: BEGIN in 0.61 seconds
+19:21:37.696298 [debug] [ThreadPool]: Using postgres connection "list_mymops_dbt_shantal"
+19:21:37.696298 [debug] [ThreadPool]: On list_mymops_dbt_shantal: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "list_mymops_dbt_shantal"} */
+select
+      'mymops' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_shantal'
+    union all
+    select
+      'mymops' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_shantal'
+  
+19:21:37.760496 [debug] [ThreadPool]: SQL status: SELECT 19 in 0.06 seconds
+19:21:37.763268 [debug] [ThreadPool]: On list_mymops_dbt_shantal: ROLLBACK
+19:21:37.824730 [debug] [ThreadPool]: On list_mymops_dbt_shantal: Close
+19:21:37.830431 [debug] [MainThread]: Using postgres connection "master"
+19:21:37.830431 [debug] [MainThread]: On master: BEGIN
+19:21:37.830431 [debug] [MainThread]: Opening a new connection, currently in state init
+19:21:38.396043 [debug] [MainThread]: SQL status: BEGIN in 0.57 seconds
+19:21:38.397105 [debug] [MainThread]: Using postgres connection "master"
+19:21:38.397105 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+19:21:38.473438 [debug] [MainThread]: SQL status: SELECT 135 in 0.08 seconds
+19:21:38.473438 [debug] [MainThread]: On master: ROLLBACK
+19:21:38.537422 [debug] [MainThread]: Using postgres connection "master"
+19:21:38.540893 [debug] [MainThread]: On master: BEGIN
+19:21:38.674462 [debug] [MainThread]: SQL status: BEGIN in 0.13 seconds
+19:21:38.675587 [debug] [MainThread]: On master: COMMIT
+19:21:38.675587 [debug] [MainThread]: Using postgres connection "master"
+19:21:38.675587 [debug] [MainThread]: On master: COMMIT
+19:21:38.742358 [debug] [MainThread]: SQL status: COMMIT in 0.07 seconds
+19:21:38.745872 [debug] [MainThread]: On master: Close
+19:21:38.748125 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+19:21:38.749349 [info ] [MainThread]: 
+19:21:38.753526 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__os
+19:21:38.753526 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__os"
+19:21:38.753526 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__os
+19:21:38.753526 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__os
+19:21:38.753526 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__os"
+19:21:38.770079 [debug] [Thread-1  ]: finished collecting timing info
+19:21:38.771125 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__os
+19:21:38.771125 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_eol
+19:21:38.771125 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_eol"
+19:21:38.771125 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_eol
+19:21:38.771125 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_eol
+19:21:38.771125 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_eol"
+19:21:38.780516 [debug] [Thread-1  ]: finished collecting timing info
+19:21:38.782116 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_eol
+19:21:38.782116 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_inv
+19:21:38.782116 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_inv"
+19:21:38.782116 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_inv
+19:21:38.782116 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_inv
+19:21:38.782116 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_inv"
+19:21:38.782116 [debug] [Thread-1  ]: finished collecting timing info
+19:21:38.792767 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_inv
+19:21:38.792767 [debug] [Thread-1  ]: Began running node model.dbt_sw.src_qualys__sw_scan
+19:21:38.792767 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.src_qualys__sw_scan"
+19:21:38.792767 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.src_qualys__sw_scan
+19:21:38.792767 [debug] [Thread-1  ]: Compiling model.dbt_sw.src_qualys__sw_scan
+19:21:38.799558 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.src_qualys__sw_scan"
+19:21:38.799558 [debug] [Thread-1  ]: finished collecting timing info
+19:21:38.803655 [debug] [Thread-1  ]: Finished running node model.dbt_sw.src_qualys__sw_scan
+19:21:38.805203 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_eolflag
+19:21:38.805203 [info ] [Thread-1  ]: 1 of 3 START table model dbt_shantal.stg_sw_eolflag............................. [RUN]
+19:21:38.805203 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:38.805203 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_eolflag
+19:21:38.805203 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_eolflag
+19:21:38.811863 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_eolflag"
+19:21:38.811863 [debug] [Thread-1  ]: finished collecting timing info
+19:21:38.811863 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_eolflag
+19:21:38.829064 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_eolflag"
+19:21:38.843760 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:38.845080 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: BEGIN
+19:21:38.845565 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+19:21:39.394686 [debug] [Thread-1  ]: SQL status: BEGIN in 0.55 seconds
+19:21:39.395824 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:39.395824 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_eolflag"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_eolflag__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_eol as (
+SELECT data_refresh_timestamp,
+    owning_business,
+    sub_business,
+    asset_id,
+    asset_class,
+    qid::integer AS qid,
+    title,
+    vuln_status,
+    uai,
+    first_app_name,
+    results
+   FROM "mymops"."ldr"."sherlock_vuln" 
+  WHERE lower(vuln_status::text) = 'active'::text
+)select * from __dbt__cte__src_qualys__sw_eol
+  );
+19:21:39.616183 [debug] [Thread-1  ]: SQL status: SELECT 9890 in 0.22 seconds
+19:21:39.617299 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:39.617299 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_eolflag"} */
+alter table "mymops"."dbt_shantal"."stg_sw_eolflag__dbt_tmp" rename to "stg_sw_eolflag"
+19:21:39.682742 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.07 seconds
+19:21:39.683849 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: COMMIT
+19:21:39.683849 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:39.683849 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: COMMIT
+19:21:39.816936 [debug] [Thread-1  ]: SQL status: COMMIT in 0.13 seconds
+19:21:39.818050 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_eolflag"
+19:21:39.818050 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_eolflag"} */
+drop table if exists "mymops"."dbt_shantal"."stg_sw_eolflag__dbt_backup" cascade
+19:21:39.885455 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.07 seconds
+19:21:39.886644 [debug] [Thread-1  ]: finished collecting timing info
+19:21:39.886644 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_eolflag: Close
+19:21:39.896665 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1d9dad5-4b65-4ff9-b16f-45326a92d916', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCF3E9670>]}
+19:21:39.897822 [info ] [Thread-1  ]: 1 of 3 OK created table model dbt_shantal.stg_sw_eolflag........................ [[32mSELECT 9890[0m in 1.09s]
+19:21:39.898933 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_eolflag
+19:21:39.898933 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_installed
+19:21:39.898933 [info ] [Thread-1  ]: 2 of 3 START table model dbt_shantal.stg_sw_installed........................... [RUN]
+19:21:39.898933 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_installed"
+19:21:39.898933 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_installed
+19:21:39.898933 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_installed
+19:21:39.907606 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_installed"
+19:21:39.907606 [debug] [Thread-1  ]: finished collecting timing info
+19:21:39.912729 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_installed
+19:21:39.916746 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_installed"
+19:21:39.919147 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+19:21:39.920340 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: BEGIN
+19:21:39.920340 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+19:21:40.522438 [debug] [Thread-1  ]: SQL status: BEGIN in 0.6 seconds
+19:21:40.523621 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+19:21:40.523621 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_installed"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_installed__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_inv as (
+SELECT q.asset_id,
+    q.ip,
+    q.qid,
+    q.os,
+    NULL::text AS title,
+    q.last_detected,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[1]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[2]
+            ELSE NULL::text
+        END AS sw_name,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN q.sw[2]
+            WHEN q.qid::text = ANY (ARRAY['45211'::character varying::text, '45253'::character varying::text]) THEN q.sw[3]
+            ELSE NULL::text
+        END AS sw_version,
+        CASE
+            WHEN q.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]) THEN
+            CASE
+                WHEN btrim(q.sw[3]) = ''::text THEN NULL::text
+                ELSE q.sw[3]
+            END
+            ELSE NULL::text
+        END AS sw_install_date,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[4]
+            ELSE NULL::text
+        END AS sw_publisher,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[5]
+            ELSE NULL::text
+        END AS sw_language,
+        CASE
+            WHEN q.qid::text = '90235'::text THEN q.sw[6]
+            WHEN q.qid::text = '45211'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_install_path,
+        CASE
+            WHEN q.qid::text = '45253'::text THEN q.sw[1]
+            ELSE NULL::text
+        END AS sw_descr
+   FROM ( SELECT qc.asset_id,
+            qc.ip,
+            qc.qid,
+            qc.os,
+            qc.last_found_date AS last_detected,
+            regexp_split_to_array(regexp_split_to_table(qc.results::text, chr(10)), chr(9)) AS sw
+           FROM "mymops"."ldr"."sherlock_sw_inventory" qc
+          WHERE qc.asset_id IS NOT NULL AND (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))) q
+)select * from __dbt__cte__src_qualys__sw_inv
+  );
+19:24:40.250686 [debug] [Thread-1  ]: SQL status: SELECT 14485296 in 179.73 seconds
+19:24:40.251708 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+19:24:40.251708 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_installed"} */
+alter table "mymops"."dbt_shantal"."stg_sw_installed__dbt_tmp" rename to "stg_sw_installed"
+19:24:40.321070 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.07 seconds
+19:24:40.325106 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: COMMIT
+19:24:40.325106 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+19:24:40.325106 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: COMMIT
+19:24:40.786503 [debug] [Thread-1  ]: SQL status: COMMIT in 0.46 seconds
+19:24:40.787693 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_installed"
+19:24:40.787693 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_installed"} */
+drop table if exists "mymops"."dbt_shantal"."stg_sw_installed__dbt_backup" cascade
+19:24:40.908144 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.12 seconds
+19:24:40.911503 [debug] [Thread-1  ]: finished collecting timing info
+19:24:40.911503 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_installed: Close
+19:24:40.916423 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1d9dad5-4b65-4ff9-b16f-45326a92d916', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCDE58130>]}
+19:24:40.917607 [info ] [Thread-1  ]: 2 of 3 OK created table model dbt_shantal.stg_sw_installed...................... [[32mSELECT 14485296[0m in 181.01s]
+19:24:40.917607 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_installed
+19:24:40.917607 [debug] [Thread-1  ]: Began running node model.dbt_sw.stg_sw_scanned
+19:24:40.917607 [info ] [Thread-1  ]: 3 of 3 START table model dbt_shantal.stg_sw_scanned............................. [RUN]
+19:24:40.933892 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:40.933892 [debug] [Thread-1  ]: Began compiling node model.dbt_sw.stg_sw_scanned
+19:24:40.933892 [debug] [Thread-1  ]: Compiling model.dbt_sw.stg_sw_scanned
+19:24:40.949610 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_sw.stg_sw_scanned"
+19:24:40.951193 [debug] [Thread-1  ]: finished collecting timing info
+19:24:40.951193 [debug] [Thread-1  ]: Began executing node model.dbt_sw.stg_sw_scanned
+19:24:40.959943 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_sw.stg_sw_scanned"
+19:24:40.963199 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:40.966362 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: BEGIN
+19:24:40.967613 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+19:24:41.744999 [debug] [Thread-1  ]: SQL status: BEGIN in 0.78 seconds
+19:24:41.746173 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:41.746173 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_scanned"} */
+
+
+  create  table "mymops"."dbt_shantal"."stg_sw_scanned__dbt_tmp"
+  as (
+    with __dbt__cte__src_qualys__sw_scan as (
+SELECT qc.asset_id,
+    qc.ip,
+    qc.qid,
+    qc.os,
+    NULL::text AS title,
+    NULL::text AS last_detected,
+    qc.results
+   FROM "mymops"."ldr"."sherlock_sw_inventory" qc
+  WHERE qc.asset_id IS NOT NULL AND NOT (qc.qid::text = ANY (ARRAY['45141'::character varying::text, '90235'::character varying::text]))
+)select * from __dbt__cte__src_qualys__sw_scan
+  );
+19:24:41.993191 [debug] [Thread-1  ]: SQL status: SELECT 21694 in 0.24 seconds
+19:24:41.994241 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:41.994241 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_scanned"} */
+alter table "mymops"."dbt_shantal"."stg_sw_scanned__dbt_tmp" rename to "stg_sw_scanned"
+19:24:42.064401 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.07 seconds
+19:24:42.067083 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: COMMIT
+19:24:42.067083 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:42.067083 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: COMMIT
+19:24:42.437213 [debug] [Thread-1  ]: SQL status: COMMIT in 0.37 seconds
+19:24:42.438555 [debug] [Thread-1  ]: Using postgres connection "model.dbt_sw.stg_sw_scanned"
+19:24:42.438555 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: /* {"app": "dbt", "dbt_version": "1.0.4", "profile_name": "dbt_sw", "target_name": "dev", "node_id": "model.dbt_sw.stg_sw_scanned"} */
+drop table if exists "mymops"."dbt_shantal"."stg_sw_scanned__dbt_backup" cascade
+19:24:42.515288 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.08 seconds
+19:24:42.516332 [debug] [Thread-1  ]: finished collecting timing info
+19:24:42.516332 [debug] [Thread-1  ]: On model.dbt_sw.stg_sw_scanned: Close
+19:24:42.523944 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1d9dad5-4b65-4ff9-b16f-45326a92d916', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCE243FA0>]}
+19:24:42.525462 [info ] [Thread-1  ]: 3 of 3 OK created table model dbt_shantal.stg_sw_scanned........................ [[32mSELECT 21694[0m in 1.58s]
+19:24:42.525462 [debug] [Thread-1  ]: Finished running node model.dbt_sw.stg_sw_scanned
+19:24:42.535031 [debug] [MainThread]: Acquiring new postgres connection "master"
+19:24:42.535031 [debug] [MainThread]: Using postgres connection "master"
+19:24:42.535031 [debug] [MainThread]: On master: BEGIN
+19:24:42.535031 [debug] [MainThread]: Opening a new connection, currently in state closed
+19:24:44.119945 [debug] [MainThread]: SQL status: BEGIN in 1.58 seconds
+19:24:44.122150 [debug] [MainThread]: On master: COMMIT
+19:24:44.123532 [debug] [MainThread]: Using postgres connection "master"
+19:24:44.125116 [debug] [MainThread]: On master: COMMIT
+19:24:44.185677 [debug] [MainThread]: SQL status: COMMIT in 0.06 seconds
+19:24:44.187754 [debug] [MainThread]: On master: Close
+19:24:44.190554 [info ] [MainThread]: 
+19:24:44.191145 [info ] [MainThread]: Finished running 3 table models in 187.91s.
+19:24:44.193751 [debug] [MainThread]: Connection 'master' was properly closed.
+19:24:44.193751 [debug] [MainThread]: Connection 'list_mymops' was properly closed.
+19:24:44.196447 [debug] [MainThread]: Connection 'list_mymops_dbt_shantal' was properly closed.
+19:24:44.196447 [debug] [MainThread]: Connection 'model.dbt_sw.stg_sw_scanned' was properly closed.
+19:24:44.196447 [info ] [MainThread]: 
+19:24:44.196447 [info ] [MainThread]: [32mCompleted successfully[0m
+19:24:44.196447 [info ] [MainThread]: 
+19:24:44.209282 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+19:24:44.210993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCDE41610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCDE41460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BCF498D00>]}
